@@ -20,3 +20,6 @@ func _process(_delta):
 	pass
 	## what why i cannot proccess every frame. My inputs are imulse 
 		
+## there should be code for the each from add force untill the velocity is maxSpeed var. then just ignore 
+## i will stay and figure out why and how each frame update works 
+## 
