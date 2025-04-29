@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://drwfa4tav8fva"]
+
+[node name="Drone" type="RigidBody3D"]

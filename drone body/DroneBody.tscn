@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://cb0jabeexr5du"]
+
+[ext_resource type="Script" uid="uid://b5tl4wbct0sou" path="res://drone body/Controller.gd" id="1_280uo"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4cv2r"]
+size = Vector3(1, 0.430115, 0.946289)
+
+[node name="DroneBody" type="Node3D"]
+script = ExtResource("1_280uo")
+
+[node name="RigidBody3D" type="RigidBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.016277)
+mass = 0.001
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
+shape = SubResource("BoxShape3D_4cv2r")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="RigidBody3D/CollisionShape3D"]
+size = Vector3(1.12097, 0.485229, 0.654663)
