@@ -4,8 +4,8 @@ extends Node
 func _ready() -> void:
 	pass 
 func _input(event):
-	if event.is_action_pressed("up"):
-		$RigidBody3D.apply_force(Vector3.UP)
+	if event.is_action("up"):
+		$RigidBody3D.apply_force(Vector3(0,lift,0))
 		print("P")
 	if event.is_action_pressed("forward"):
 		$RigidBody3D.apply_force(Vector3.FORWARD)
@@ -16,3 +16,7 @@ func _input(event):
 	if event.is_action_pressed("left"):
 		$RigidBody3D.apply_torque(Vector3.LEFT)
 		print("L")
+func _process(_delta):
+	pass
+	## what why i cannot proccess every frame. My inputs are imulse 
+		
